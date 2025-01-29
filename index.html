@@ -16,27 +16,92 @@
     <meta name="description" content="Stay tuned for a new project we’re launching soon. We can’t wait to share it with you!">
     <title>bocc.io | Fostering Dynamic Synergies and Leveraging Disruptive Value Alignment Through Next-Level Solutions</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        .highlight-text {
+        font-size: 1.1rem;
+        font-weight: 400;
+        max-width: 700px;
+        line-height: 1.6;
+        color: #222; /* Darker for better contrast */
+        }
+
+        .highlight-text b {
+            font-weight: 700;
+            color: #000; /* Strong contrast */
+        }
+
+        .highlight-text .emphasized {
+            font-style: italic;
+            font-weight: 600;
+            color: #0077cc; /* More subtle blue */
+        }
+
+        .motto {
+            font-size: 1.2rem; /* Make it a real focal point */
+            font-family: 'Merriweather', serif; /* Different font for gravitas */
+            font-weight: 700;
+            color: #ec2f4b; /* Second button gradient color */
+            margin-top: 40px;
+        }
         body {
             margin: 0;
             padding: 30px;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: #f0f0f0;
             color: #333;
         }
         h1 {
-            font-size: 2rem;
-            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+            color: #111;
         }
         p {
-            font-size: 1rem;
-            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            margin: 15px 0;
             color: #555;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .logo {
+            width: 180px;
+            height: auto;
+            margin-top:: 5px;
+            margin-bottom: 15px;
+            max-width: 90%;
+        }
+        .donation-container {
+            margin-top: 60px;
+            font-size: 0.75rem;
+            color: #444;
+            max-width: 400px;
+        }
+        .donation-container p {
+            font-size: 0.75rem;
+            margin: 5px 0;
+}
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: linear-gradient(to right, #009fff, #ec2f4b);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            position:relative;
+            transition: all 0.1s ease-out;
         }
         footer {
             margin-top: auto;
@@ -45,21 +110,74 @@
             color: #888; 
             padding: 10px 0;
         }
-        .logo {
-            width: 150px;
-            height: auto;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
     <img src="B.png" alt="bocc.io Logo" class="logo"> 
     <h1>bocc.io</h1>
-    <p><br>We are currently fostering dynamic synergies, driving disruptive value alignment, and leveraging next-level solutions that empower stakeholders to pioneer scalable, value-driven, action-oriented paradigm shifts in the global ecosystem, catalyzing holistic transformation towards frictionless, next-gen agile ideation.</p>
-    <p><br><b>Your trusted partner in leveraging scalable pivotability™</b></p>
-    <p><br>Check back soon for more details!</p>
+    <p class="highlight-text">
+        We are currently <b>fostering dynamic synergies</b>,  
+        <span class="emphasized">driving disruptive value alignment</span>, and  
+        <b>leveraging next-level solutions</b> that empower stakeholders  
+        to pioneer <b>scalable, value-driven, action-oriented paradigm shifts</b>  
+        in the global ecosystem, catalyzing  
+        <span class="emphasized">holistic transformation</span>  
+        towards frictionless, next-gen agile ideation.
+    </p>
+    <p class="motto">Your trusted partner in leveraging scalable pivotability™</p>
+        <div class="donation-container">
+            <p>Support our mission to drive frictionless, agile synergies by making a financial commitment.</p>
+            <button class="button" id="donateButton" onclick="changeButtonText()">Unleash Value Now</button>
+            <p>Your contributions empower us to continue leveraging scalable pivotability™ while fostering best-in-class paradigm shifts.</p>
+        </div>
     <footer>
-        &copy; 2025 bocc.io. All rights reserved.
+        <br><br>&copy; 2025 bocc.io. All rights reserved.
     </footer>
+    <script>
+        const buttonTexts = [
+        "Deploying Disruptive Value...",
+        "Aligning Cross-Functional Leverage Nodes...",
+        "Pivoting Scalable Synergy...",
+        "Maximizing Value Alignment...",
+        "Optimizing Next-Gen Ideation...",
+        "Driving KPI Enhancements...",
+        "Synchronizing Frictionless Synergies...",
+        "Empowering Stakeholder-Centric Paradigms...",
+        "Revolutionizing Agile Monetization...",
+        "Activating Enterprise-Wide Pivotability...",
+        "Unlocking High-Impact Scalability...",
+        "Engineering Data-Driven Ecosystem Synergies...",
+        "Expanding Omni-Channel Monetization Strategies...",
+        "Orchestrating Best-in-Class Synergy Activation...",
+        "Innovating Seamless Disruptive Frameworks...",
+        "Leveraging Deep-Dive KPI Optimization...",
+        "Transforming Market-First Value Amplification...",
+        "Executing Blockchain-Enhanced Stakeholder Synergies...",
+        "Implementing Future-Proofed Disruption Protocols...",
+        "Enhancing AI-Enabled Synergy Convergence...",
+        "Catalyzing Next-Level Growth Leveraging...",
+        "Monetizing Seamlessly Integrated Agile Strategies...",
+        "Finalizing Synergy-Infused Disruptive ROI...",
+        "Realigning Best-Practice Thought Leadership...",
+        "Recalibrating Mission-Critical Disruptive KPIs...",
+        "Translating Actionable Insights into Exponential ROI...",
+        "Synthesizing Core Competency Alignment...",
+        "Bootstrap Scaling for Maximum Stakeholder Traction...",
+        "Delivering Holistic, 360-Degree Value Enhancement...",
+        "Revolutionizing Seamlessly Optimized Value Streams..."
+        ];
+        
+        let clickCount = 0;
+    
+        function changeButtonText() {
+            const button = document.getElementById("donateButton");
+            if (clickCount < buttonTexts.length) {
+                button.textContent = buttonTexts[clickCount];
+                clickCount++;
+            } else {
+                button.textContent = "Value Leveraged Successfully!";
+            }
+        }
+    </script>
 </body>
 </html>
