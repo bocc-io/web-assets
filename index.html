@@ -18,6 +18,20 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @keyframes textChange {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+           }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.5;
+            }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+             }
+        }
         .highlight-text {
         font-size: 1.1rem;
         font-weight: 400;
@@ -75,7 +89,7 @@
         .logo {
             width: 180px;
             height: auto;
-            margin-top:: 5px;
+            margin-top: 5px;
             margin-bottom: 15px;
             max-width: 90%;
         }
@@ -102,6 +116,10 @@
             cursor: pointer;
             position:relative;
             transition: all 0.1s ease-out;
+            animation: none;
+        }
+        .button.animate-text {
+        animation: textChange 0.5s ease-out;
         }
         .testimonials {
             margin-top: 50px;
@@ -146,11 +164,11 @@
     <img src="B.png" alt="bocc.io Logo" class="logo"> 
     <h1>bocc.io</h1>
     <p class="highlight-text">
-        We are currently <b>fostering dynamic synergies</b>,  
-        <span class="emphasized">driving disruptive value alignment</span>, and  
-        <b>leveraging next-level solutions</b> that empower stakeholders  
+        At <b>bocc.io</b>, our mission is to <b>foster dynamic synergies</b>,  
+        <span class="emphasized">drive disruptive value alignment</span>, and  
+        <b>leverage next-level solutions</b> that empower stakeholders  
         to pioneer <b>scalable, value-driven, action-oriented paradigm shifts</b>  
-        in the global ecosystem, catalyzing  
+        in the global ecosystem—catalyzing  
         <span class="emphasized">holistic transformation</span>  
         towards frictionless, next-gen agile ideation.
     </p>
@@ -159,15 +177,15 @@
         <h2>What Industry Leaders Are Saying</h2>
         <div class="testimonial">
             <p>"bocc.io transformed our paradigm so seamlessly, I don't even know what we do anymore."</p>
-            <span>- <strong>Chad Boxchecker</strong>, Agile Transformation Thought Leader</span>
+            <span>- <strong>Chad Boxchecker</strong>, Agile Monetization Thought Leader</span>
         </div>
         <div class="testimonial">
             <p>"Thanks to bocc.io, our holistic value stream is now fully pivotable at scale. We have no idea what that means, but our investors love it."</p>
-            <span>- <strong>Tim Tokenhire</strong>, Director of Vibes and Synergy, NextGen Synergy Labs</span>
+            <span>- <strong>Tim Tokenhire</strong>, Director of Vibes, NextGen InnoVibe Solution Labs</span>
         </div>
         <div class="testimonial">
-            <p>"Thanks to Bocc.io’s next-gen strategies, I’ve learned how to talk about disruption without actually understanding it. The real victory is getting the credit."</p>
-            <span>- <strong>Bill Buzzwordington</strong>, Head of Talent Optimization, SynergySphere Dynamics</span>
+            <p>"Thanks to bocc.io’s next-gen synergies, I’ve learned how to talk about disruption without actually understanding it. The real victory is getting the credit."</p>
+            <span>- <strong>Bill Buzzwordington</strong>, Head of Global Disruption, StreamlinedImpact LLC</span>
         </div>
     </section>
     <div class="donation-container">
@@ -190,7 +208,7 @@
         "Synchronizing Frictionless Synergies...",
         "Empowering Stakeholder-Centric Paradigms...",
         "Revolutionizing Agile Monetization...",
-        "Activating Enterprise-Wide Pivotability...",
+        "Activating Enterprise-Wide Pivotability™...",
         "Unlocking High-Impact Scalability...",
         "Engineering Data-Driven Ecosystem Synergies...",
         "Expanding Omni-Channel Monetization Strategies...",
@@ -217,16 +235,26 @@
         ];
         
         let clickCount = 0;
+
+function changeButtonText() {
+    const button = document.getElementById("donateButton");
     
-        function changeButtonText() {
-            const button = document.getElementById("donateButton");
-            if (clickCount < buttonTexts.length) {
-                button.textContent = buttonTexts[clickCount];
-                clickCount++;
-            } else {
-                button.textContent = "✅ Value Leveraged Successfully!";
-            }
-        }
+    // Add the animation class
+    button.classList.add('animate-text');
+    
+    // Set the new text content
+    if (clickCount < buttonTexts.length) {
+        button.textContent = buttonTexts[clickCount];
+        clickCount++;
+    } else {
+        button.textContent = "✅ Value Leveraged Successfully!";
+    }
+    
+    // Remove the animation class after it completes, so it can be re-triggered
+    setTimeout(() => {
+        button.classList.remove('animate-text');
+    }, 500); // Match the animation duration
+}
     </script>
 </body>
 </html>
