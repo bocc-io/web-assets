@@ -245,25 +245,32 @@
         
         let clickCount = 0;
 
-function changeButtonText() {
-    const button = document.getElementById("donateButton");
-    
-    // Add the animation class
-    button.classList.add('animate-text');
-    
-    // Set the new text content
-    if (clickCount < buttonTexts.length) {
-        button.textContent = buttonTexts[clickCount];
-        clickCount++;
-    } else {
-        button.textContent = "✅ Value Leveraged Successfully!";
+    function changeButtonText() {
+        const button = document.getElementById("donateButton");
+
+        // Add the animation class
+        button.classList.add('animate-text');
+
+        // Set the new text content
+        if (clickCount < buttonTexts.length) {
+            button.textContent = buttonTexts[clickCount];
+            clickCount++;
+        } else {
+            button.textContent = "✅ Value Leveraged Successfully!";
+            // Send an event to Google Analytics when the final text appears (end of the process)
+            gtag('event', 'button_click', {
+                'event_category': 'Button Interactions',
+                'event_label': 'Completed Full Button Flow',
+                'value': 1
+                                          }
+                );
     }
-    
-    // Remove the animation class after it completes, so it can be re-triggered
-    setTimeout(() => {
-        button.classList.remove('animate-text');
-    }, 500); // Match the animation duration
-}
+
+        // Remove the animation class after it completes, so it can be re-triggered
+        setTimeout(() => {
+            button.classList.remove('animate-text');
+        }, 500); // Match the animation duration
+    }
     </script>
 </body>
 </html>
