@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <meta property="og:title" content="About Joey | bocc.io">
-    <meta property="og:description" content="Meet Joey Boccio, Founder and Director of Performative Competence at bocc.io.">
-    <meta property="og:image" content="URL_TO_THUMBNAIL">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-<style>
-        body {
-            margin: 0;
-            padding: 80px;
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-        }
-        h1, h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #111;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            max-width: 700px;
-            margin: 0 auto 20px auto;
-            color: #555;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding-top: 30px;
-        }
-        a {
-            color: #0077cc;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        footer {
-            margin-top: 60px;
-            font-size: 0.8rem;
-            color: #888;
-        }
-        .logo {
-            width: 180px;
-            height: auto;
-            max-width: 90%;
-        }
-        .navbar {
-            width: 100%;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding: 10px 30px;
-            display: flex;
-            justify-content: center;
-            z-index: 999;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:title" content="About Joey | bocc.io">
+  <meta property="og:description" content="Meet Joey Boccio, Founder and Director of Performative Competence at bocc.io.">
+  <meta property="og:image" content="URL_TO_THUMBNAIL">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .logo {
+      width: 180px;
+      height: auto;
+      max-width: 90%;
+      margin: 40px auto 20px;
+      display: block;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 10px;
+      display: block;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      color: #555;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-          <a href="index.html" class="nav-logo">bocc.io</a>
-          <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About Us</a>
-            <a href="careers.html">Careers</a>
-          </div>
-        </div>
-      </nav>
-      <img src="joey.png" alt="Photo of Joey" class="logo"> 
-    <div class="container">
-        <h1>About Joey</h1>
-        <p>Joey Boccio is bocc.io’s Founder and Director of Performative Competence. With over two decades of experience turning executive panic into bloated tooling nobody will ever use, he has mastered the art of navigating the modern tech stack - and the modern stakeholder attention span.</p>
-        <p>He builds teams that outlast the executive revolving door, reigns in cross-functional corporate lifers before they can derail everything, and masterfully shields his teams from the fallout of middle managers' latest vanity projects. He’s fluent in SQL, Python, and the exact tone of Slack message that says, “This is a terrible idea,” without actually saying it.</p>
-        <p>When he’s not reworking KPIs for the fifth time to match someone's gut feeling, Joey enjoys forecasting things that already happened, visualizing things no one cares about, and holding a grim ledger of every pointless meeting endured.</p>
-        <p><a href="index.html">← Back to Main Page</a></p>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">bocc.io</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="careers.html">Careers</a>
+      </div>
     </div>
-    <footer>
-        &copy; 2025 bocc.io. All rights reserved. Coded by AI.
-    </footer>
+  </nav>
+
+  <div class="container">
+    <section class="page-heading">
+      <img src="joey.png" alt="Photo of Joey" class="logo">
+      <h1>About Joey</h1>
+      <span class="subtitle">Founder and Director of Performative Competence</span>
+    </section>
+
+    <p>Joey Boccio is bocc.io's Founder, Director of Performative Competence, and proud recipient of the "Preventing Sexual Harassment in the Workplace (Managers)" certificate, courtesy of LinkedIn Learning. With over two decades of experience turning executive panic into bloated tooling nobody will ever use, he has mastered the art of navigating the modern tech stack — and the modern stakeholder attention span.</p>
+    <p>He builds teams that outlast the executive revolving door, shields his people from middle managers' vanity projects, and reins in cross-functional corporate lifers before they manage to derail everything. He's fluent in SQL, Python, and the exact tone of Slack message that says, "This is a terrible idea," without actually saying it.</p>
+    <p>When he's not reworking KPIs for the fifth time to match someone's gut feeling, Joey enjoys forecasting things that already happened, visualizing things no one cares about, maintaining a grim ledger of every pointless meeting endured, and discarding Claude's bad suggestions.</p>
+
+    <p><a href="index.html">← Back to Main Page</a></p>
+  </div>
+
+  <footer>
+    &copy; 2026 bocc.io. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

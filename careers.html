@@ -1,98 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <meta property="og:title" content="Careers | bocc.io">
-    <meta property="og:description" content="Careers at bocc.io – the wild world of recruiting hell awaits.">
-    <meta property="og:image" content="URL_TO_THUMBNAIL">
-    <title>Careers | bocc.io</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-<style>
-    body {
-        margin: 0;
-        padding: 80px;
-        font-family: 'Inter', sans-serif;
-        background-color: #f0f0f0;
-        color: #333;
-        text-align: center;
-    }
-    h1, h2 {
-        font-family: 'Montserrat', sans-serif;
-        color: #111;
-    }
-    p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        max-width: 700px;
-        margin: 0 auto 20px auto;
-        color: #555;
-    }
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding-top: 30px;
-    }
-    footer {
-        margin-top: 60px;
-        font-size: 0.8rem;
-        color: #888;
-    }
+  <meta charset="UTF-8">
+  <title>Careers | bocc.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Careers | bocc.io">
+  <meta property="og:description" content="Careers at bocc.io – the wild world of recruiting hell awaits.">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
     .logo {
-        width: 180px;
-        height: auto;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        max-width: 90%;
+      width: 160px;
+      margin: 40px auto 30px;
+      display: block;
     }
-    .navbar {
-        width: 100%;
-        background-color: #fff;
-        border-bottom: 1px solid #ddd;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 10px 30px;
-        display: flex;
-        justify-content: center;
-        z-index: 999;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px 100px;
     }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 60px;
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
     a {
-        color: #0052cc;
-        font-weight: 500;
-        text-decoration: underline;
-        }
-        a:hover {
-        text-decoration: none;
-        }
-</style>
+      color: #0052cc;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #003a99;
+    }
+
+    details {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      cursor: pointer;
+      text-align: left;
+    }
+
+    summary {
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    summary:hover::after {
+      content: " (oh boy)";
+      color: #999;
+      font-weight: 400;
+      font-size: 0.85rem;
+      margin-left: 5px;
+    }
+
+    details p {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.75rem;
+      color: #888;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-          <a href="index.html" class="nav-logo">bocc.io</a>
-          <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="careers.html" class="active">Careers</a>
-          </div>
-        </div>
-      </nav>
-      <img src="B.png" alt="bocc.io Logo" class="logo"> 
-    <div class="container" style="padding-top: 10px;">
-        <h1>Careers at bocc.io</h1>
-        <p style="font-size: 0.85rem; color: #888;">You’ve reached the cutting edge of hiring — ghosting as a service, assessments that test nothing, and just enough interview rounds to convince Legal that the H1-B promotion we greenlit months ago wasn’t preselected.</p>   
-        <p><a href="https://www.reddit.com/r/recruitinghell/" target="_blank">Click here to explore career opportunities</a></p>    
-        <br>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">bocc.io</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="careers.html" class="active">Careers</a>
+      </div>
     </div>
+  </nav>
+
+  <img src="B.png" alt="bocc.io Logo" class="logo">
+
+  <div class="container">
+    <section class="page-heading">
+      <h1>Careers at bocc.io</h1>
+    </section>
+
+    <p style="text-align: center; font-size: 0.85rem; color: #666;">
+      You've reached the cutting edge of hiring — now with ghosting-as-a-service, pointless assessments, and just enough interview rounds for Legal to pretend the boss's buddy who we'd already decided on wasn't the plan all along.
+    </p>
+    <p style="text-align: center;"><a href="https://www.reddit.com/r/recruitinghell/" target="_blank">Click here to explore career opportunities</a></p>
+
+    <h2>Why Work Here</h2>
+    <p>We believe in whatever our HR's values committee settled on this year after three cosmos and a Canva mood board. We're not like other employers, we're a <em>cool</em> employer.</p>
+
+    <details>
+      <summary>Quarterly Team-Building Activities</summary>
+      <p>At bocc.io, we know that nothing builds camaraderie like being locked in an escape room with Greg from Accounting shouting "Try the numbers backward!" while everyone silently dies inside. Or Topgolf, where we confuse mandatory small talk over stale, salty nachos with culture.</p>
+    </details>
+
+    <details>
+      <summary>Company Culture</summary>
+      <p>Think fewer ping-pong tables, more eye contact. We skip the empty platitudes about "being a family" - unless your family makes you fill out a Jira ticket to hug your cousin.</p>
+    </details>
+
+    <details>
+      <summary>Growth Opportunities</summary>
+      <p>You'll be asked to do a job two levels above your pay grade, but hey, we'll call it "stretch work" and list your name in 8pt font on a slide nobody reads.</p>
+    </details>
+
+    <details>
+      <summary>Recognition</summary>
+      <p>You'll be personally thanked for meeting basic expectations, by a middle manager who thinks every task you finish is a testament to their leadership genius.</p>
+    </details>
+
+    <details>
+      <summary>Transparent Communication</summary>
+      <p>You'll always know where you stand: lost somewhere between a game of telephone you weren't invited to participate in and your manager "just passing along feedback."</p>
+    </details>
+
+    <details>
+      <summary>Flexible Work Culture</summary>
+      <p>Choose the work location that works best for you: on Slack and Zoom from your assigned cubicle in Jersey City, North Austin, or scenic Fremont. Our "hybrid" policy allows remote work once a week - until leadership sees a headline about another company's policy and panics into copying it, for reasons none of them can explain.</p>
+    </details>
+
     <footer>
-        &copy; 2025 bocc.io. All rights reserved. Coded by AI.
+      &copy; 2026 bocc.io. All rights reserved.
     </footer>
+  </div>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

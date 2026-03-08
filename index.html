@@ -6,83 +6,43 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0W2J0R69LD"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0W2J0R69LD');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0W2J0R69LD');
     </script>
-    <!-- End Google tag  -->
-
-    <!-- Open Graph meta tags for better link preview -->
-    <meta property="og:title" content="bocc.io | Leveraging Scalable Pivotability™">
+    <meta property="og:title" content="bocc.io | Accountability is a journey. We help you avoid the destination.™">
     <meta property="og:description" content="Empowering stakeholders to drive next-level synergies and scalable pivotability™ with innovative solutions.">
     <meta property="og:image" content="https://bocc.io/B.png">
     <meta property="og:url" content="https://www.bocc.io">
     <meta property="og:type" content="website">
-    <!-- Other meta tags -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bocc.io |  Leveraging Scalable Pivotability™</title>
+    <title>bocc.io | Accountability is a journey. We help you avoid the destination.™</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         @keyframes textChange {
-        0% {
-            transform: scale(1);
-            opacity: 1;
-           }
-        50% {
-            transform: scale(1.2);
-            opacity: 0.5;
-            }
-        100% {
-            transform: scale(1);
-            opacity: 1;
-             }
-        }
-        .highlight-text {
-        font-size: 1.1rem;
-        font-weight: 400;
-        max-width: 700px;
-        line-height: 1.6;
-        color: #222; /* Darker for better contrast */
+            0%   { transform: scale(1);   opacity: 1;   }
+            50%  { transform: scale(1.2); opacity: 0.5; }
+            100% { transform: scale(1);   opacity: 1;   }
         }
 
-        .highlight-text b {
-            font-weight: 700;
-            color: #000; /* Strong contrast */
-        }
-
-        .highlight-text .emphasized {
-            font-style: italic;
-            font-weight: 600;
-            color: #0077cc; /* More subtle blue */
-        }
-
-        .motto {
-            font-size: 1.2rem; /* Make it a real focal point */
-            font-family: 'Merriweather', serif; /* Different font for gravitas */
-            font-weight: 700;
-            color: #ec2f4b; /* Second button gradient color */
-            margin-top: 40px;
-        }
         body {
-            margin: 0;
-            padding: 80px 30px 30px 30px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
+            min-height: 100vh;
         }
+
+        .logo {
+            width: 180px;
+            height: auto;
+            margin: 40px auto 15px;
+            max-width: 90%;
+        }
+
         h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: 2.5rem;
@@ -90,7 +50,9 @@
             letter-spacing: 1px;
             text-transform: lowercase;
             color: #111;
+            margin: 0 0 15px;
         }
+
         p {
             font-size: 1.1rem;
             margin: 15px 0;
@@ -99,23 +61,26 @@
             line-height: 1.6;
         }
 
-        .logo {
-            width: 180px;
-            height: auto;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            max-width: 90%;
+        .motto {
+            font-size: 1.2rem;
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            color: #ec2f4b;
+            margin-top: 40px;
         }
+
         .donation-container {
             margin-top: 60px;
             font-size: 0.75rem;
             color: #444;
             max-width: 400px;
         }
+
         .donation-container p {
             font-size: 0.75rem;
             margin: 5px 0;
         }
+
         .button {
             display: inline-block;
             margin-top: 10px;
@@ -127,36 +92,43 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            position:relative;
             transition: all 0.1s ease-out;
-            animation: none;
         }
+
         .button.animate-text {
-        animation: textChange 0.5s ease-out;
+            animation: textChange 0.5s ease-out;
         }
+
         .testimonials {
             margin-top: 50px;
             text-align: center;
             max-width: 700px;
+            padding: 0 20px;
         }
+
         .testimonials h2 {
             font-size: 1.8rem;
             font-weight: 700;
             color: #111;
             margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
         }
+
         .testimonial {
             background: #fff;
             padding: 15px;
             margin: 15px 0;
             border-left: 4px solid #009fff;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            text-align: left;
         }
+
         .testimonial p {
             font-size: 1rem;
             font-style: italic;
             color: #444;
         }
+
         .testimonial span {
             display: block;
             font-size: 0.9rem;
@@ -164,127 +136,122 @@
             margin-top: 5px;
             color: #666;
         }
+
         footer {
             margin-top: auto;
             text-align: center;
-            font-size: 0.8rem; 
-            color: #888; 
-            padding: 10px 0;
+            font-size: 0.8rem;
+            color: #888;
+            padding: 30px 0 20px;
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-          <a href="index.html" class="nav-logo">bocc.io</a>
-          <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="careers.html">Careers</a>
-          </div>
+            <a href="index.html" class="nav-logo">bocc.io</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="careers.html">Careers</a>
+            </div>
         </div>
-      </nav>
-    <img src="B.png" alt="bocc.io Logo" class="logo"> 
+    </nav>
+
+    <img src="B.png" alt="bocc.io Logo" class="logo">
     <h1>bocc.io</h1>
     <p class="highlight-text">
-        At <b>bocc.io</b>, our mission is to <b>foster dynamic synergies</b>,  
-        <span class="emphasized">drive disruptive value alignment</span>, and  
-        <b>leverage next-level solutions</b> that empower stakeholders  
-        to pioneer <b>scalable, value-driven, action-oriented paradigm shifts</b>  
-        in the global ecosystem—catalyzing  
-        <span class="emphasized">holistic transformation</span>  
-        towards frictionless, next-gen agile ideation.
+        At <b>bocc.io</b>, we help leaders
+        <span class="emphasized">avoid ever being accountable for anything</span>.
+        Through <b>proprietary facilitation frameworks</b>, <b>stakeholder sentiment calibration</b>,
+        and our patented <span class="emphasized">Conflict Deferral Engine™</span>,
+        we ensure every decision is pressure-tested against the room
+        until it either belongs to everyone or quietly disappears.
     </p>
-    <p class="motto">Your trusted partner in leveraging scalable pivotability™</p>
+    <p class="motto">Accountability is a journey. We help you avoid the destination.™</p>
+
     <section class="testimonials">
-        <h2>What Industry Leaders Are Saying</h2>
+        <h2>Unsolicited Feedback We Are Choosing to Highlight</h2>
         <div class="testimonial">
-            <p>"Thanks to bocc.io's scalable quantum ideation, we've managed to eliminate the concept of failure entirely. Who knew that was even possible?"</p>
-            <span>- <strong>Chad Boxchecker</strong>, Director of Vibes, Pivtr</span>
+            <p>"After our third reorg in eighteen months and two consecutive quarters of missed targets, bocc.io helped me understand that none of it matters if you say 'AI' with enough conviction."</p>
+            <span>- <strong>Chad Boxchecker</strong>, Regional VP of Strategic Initiatives, Consolidated Solutions International</span>
         </div>
         <div class="testimonial">
-            <p>"Bocc.io's value-driven paradigm shifts have empowered us to transform every meeting into a non-stop action-packed convergence accelerator, redefining collaboration as we know it."</p>
-            <span>- <strong>Karen Tokenhire</strong>, Head of Global Disruption, MaxFlex Ideation Labs</span>
-        </div>
-        <div class="testimonial">
-            <p>"These synergistic next-gen solutions allow me to talk about disruption without having to contribute anything of value. The real skill is taking credit."</p>
-            <span>- <strong>Buzz Wordington</strong>, LinkedIn Engagement Farmer and Certified Pivot Architect™</span>
+            <p>"I know everything that's happening on my team. My team does not."</p>
+            <span>- <strong>Mike Siloway</strong>, Head of Culture and Engagement, Meridian Group Holdings</span>
         </div>
     </section>
+
     <div class="donation-container">
-        <p>Support our mission to drive frictionless, agile synergies by making a financial commitment.</p>
+        <p>Support our mission to help leaders avoid the discomfort of being responsible for outcomes.</p>
         <button class="button" id="donateButton" onclick="changeButtonText()">Click To Unleash Value</button>
-        <p>Your contributions empower us to continue leveraging scalable pivotability™ while fostering best-in-class paradigm shifts.</p>
+        <p>Your contribution will be processed, pressure-tested against stakeholder sentiment, and actioned pending alignment.</p>
     </div>
+
     <footer>
-        &copy; 2025 bocc.io. All rights reserved. Coded by AI.
+        &copy; 2026 bocc.io. All rights reserved.
     </footer>
+
     <script>
         const buttonTexts = [
-        "Deploying Disruptive Value...",
-        "Aligning Cross-Functional Leverage Nodes...",
-        "Pivoting Scalable Synergy...",
-        "Maximizing Value Alignment...",
-        "Optimizing Next-Gen Ideation...",
-        "CC'ing Your Manager For Visibility...",
-        "Driving KPI Enhancements...",
-        "Synchronizing Frictionless Synergies...",
-        "Empowering Stakeholder-Centric Paradigms...",
-        "Revolutionizing Agile Monetization...",
-        "Activating Enterprise-Wide Pivotability™...",
-        "Unlocking High-Impact Scalability...",
-        "Engineering Data-Driven Ecosystem Synergies...",
-        "Expanding Omni-Channel Monetization Strategies...",
-        "Orchestrating Best-in-Class Synergy Activation...",
-        "Innovating Seamless Disruptive Frameworks...",
-        "Leveraging Deep-Dive KPI Optimization...",
-        "Transforming Market-First Value Amplification...",
-        "Circling Back For Next Steps...",
-        "Executing Blockchain-Enhanced Stakeholder Synergies...",
-        "Implementing Future-Proofed Disruption Protocols...",
-        "Enhancing AI-Enabled Synergy Convergence...",
-        "Catalyzing Next-Level Growth Leveraging...",
-        "Monetizing Seamlessly Integrated Agile Strategies...",
-        "Flagging This For Review...",
-        "Finalizing Synergy-Infused Disruptive ROI...",
-        "Realigning Best-Practice Thought Leadership...",
-        "Recalibrating Mission-Critical Disruptive KPIs...",
-        "Translating Actionable Insights into Exponential ROI...",
-        "Synthesizing Core Competency Alignment...",
-        "Bootstrap Scaling for Maximum Stakeholder Traction...",
-        "Delivering Holistic, 360-Degree Value Enhancement...",
-        "Revolutionizing Seamlessly Optimized Value Streams...",
-        "Taking Take This Offline..."
+            "Aligning Cross-Functional Leverage Nodes...",
+            "Per My Last Email...",
+            "Maximizing Value Alignment...",
+            "Scheduling a Sync to Discuss the Sync...",
+            "Optimizing Next-Gen Ideation...",
+            "CC'ing Your Manager For Visibility...",
+            "Looping In Legal...",
+            "Driving KPI Enhancements...",
+            "Adding This to the Parking Lot...",
+            "Synchronizing Frictionless Synergies...",
+            "Waiting on Signoff From Someone Who Is Out Until Monday...",
+            "Empowering Stakeholder-Centric Paradigms...",
+            "Updating the Slide Deck Nobody Will Read...",
+            "Revolutionizing Agile Monetization...",
+            "Rebranding Last Quarter's Failure as a Learning...",
+            "Activating Enterprise-Wide Pivotability™...",
+            "Confirming You Received My Previous Confirmation...",
+            "Unlocking High-Impact Scalability...",
+            "Proactively Solving a Problem Nobody Has So Someone Upstairs Notices...",
+            "Engineering Data-Driven Ecosystem Synergies...",
+            "Orchestrating Best-in-Class Synergy Activation...",
+            "Leveraging Deep-Dive KPI Optimization...",
+            "Transforming Market-First Value Amplification...",
+            "Circling Back For Next Steps...",
+            "Flagging This For Review...",
+            "Finalizing Synergy-Infused Disruptive ROI...",
+            "Realigning Best-Practice Thought Leadership...",
+            "Recalibrating Mission-Critical Disruptive KPIs...",
+            "Translating Actionable Insights into Exponential ROI...",
+            "Synthesizing Core Competency Alignment...",
+            "Delivering Holistic, 360-Degree Value Enhancement...",
+            "Revolutionizing Seamlessly Optimized Value Streams...",
+            "Taking This Offline..."
         ];
-        
+
         let clickCount = 0;
 
-    function changeButtonText() {
-        const button = document.getElementById("donateButton");
+        function changeButtonText() {
+            const button = document.getElementById("donateButton");
+            button.classList.add('animate-text');
+            if (clickCount < buttonTexts.length) {
+                button.textContent = buttonTexts[clickCount];
+                clickCount++;
+            } else {
+                button.textContent = "✅ Value Leveraged Successfully!";
+                gtag('event', 'button_click', {
+                    'event_category': 'Button Interactions',
+                    'event_label': 'Completed Full Button Flow',
+                    'value': 1
+                });
+            }
+            setTimeout(() => { button.classList.remove('animate-text'); }, 500);
+        }
 
-        // Add the animation class
-        button.classList.add('animate-text');
-
-        // Set the new text content
-        if (clickCount < buttonTexts.length) {
-            button.textContent = buttonTexts[clickCount];
-            clickCount++;
-        } else {
-            button.textContent = "✅ Value Leveraged Successfully!";
-            // Send an event to Google Analytics when the final text appears (end of the process)
-            gtag('event', 'button_click', {
-                'event_category': 'Button Interactions',
-                'event_label': 'Completed Full Button Flow',
-                'value': 1
-                                          }
-                );
-    }
-
-        // Remove the animation class after it completes, so it can be re-triggered
-        setTimeout(() => {
-            button.classList.remove('animate-text');
-        }, 500); // Match the animation duration
-    }
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
     </script>
 </body>
 </html>
